@@ -16,11 +16,8 @@ jobs:
           distribution: 'temurin'
 
       - name: Set up Allure CLI
-        run: |
-          curl -o allure-2.24.1.tgz -L https://github.com/allure-framework/allure2/releases/download/2.24.1/allure-2.24.1.tgz
-          tar -xzf allure-2.24.1.tgz
-          sudo mv allure-2.24.1/bin/allure /usr/local/bin/allure
-          allure --version
+        uses: simple-elf/allure-report-action@v1.9
+
 
       - name: Build and run tests
         run: mvn clean test
