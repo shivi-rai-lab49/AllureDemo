@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Verify fail sceanrio","2","TestNG description 2","Suite","Sat May 03 20:56:22 IST 2025","passed","Sat May 03 20:56:22 IST 2025","AllureAnnotations","Test","AllureAnnotations","fail"
+"Verify fail scenario","11","TestNG description 2","Default Suite","Sat May 03 21:16:29 IST 2025","failed","Sat May 03 21:16:29 IST 2025","AllureAnnotationTest","AllureDemo","AllureAnnotationTest","fail"
+"Sample test that always passes","3","testPass","Default Suite","Fri May 02 17:58:40 IST 2025","passed","Fri May 02 17:58:40 IST 2025","DemoTest","AllureDemo","DemoTest","testPass"
+"Verify login","1446","TestNG description 1","Suite","Sat May 03 20:56:16 IST 2025","passed","Sat May 03 20:56:18 IST 2025","AllureAnnotations","Test","AllureAnnotations","login"

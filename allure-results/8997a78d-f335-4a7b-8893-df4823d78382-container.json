@@ -1,0 +1,1 @@
+{"uuid":"8997a78d-f335-4a7b-8893-df4823d78382","name":"AllureAnnotationTest.setUp","children":["2ba5e81a-993b-47ba-86df-c33b02e8460b"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1746287082733,"stop":1746287087053}],"afters":[],"start":1746287082733,"stop":1746287087053}
