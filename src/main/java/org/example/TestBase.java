@@ -2,7 +2,6 @@ package org.example;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
@@ -19,6 +18,7 @@ public class TestBase {
         driver = new ChromeDriver();
 
         try {
+            driver.manage().window().maximize();
             driver.get("https://demo.guru99.com/test/newtours/");
 
         } catch (Exception e) {
