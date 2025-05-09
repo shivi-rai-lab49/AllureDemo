@@ -1,15 +1,14 @@
 import io.qameta.allure.*;
-import io.qameta.allure.testng.AllureTestNg;
 import org.example.TestBase;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Listeners;
+
 import org.testng.annotations.Test;
 
-@Listeners({AllureTestNg.class})
+
 public class DemoTest extends TestBase {
 
     @Test
@@ -88,7 +87,6 @@ public class DemoTest extends TestBase {
                 {"validUser", "validPassword", "Login successful"},
                 {"invalidUser", "wrongPassword", "Login failed"}
         };
-
         for (String[] user : users) {
             String username = user[0];
             String password = user[1];

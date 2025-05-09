@@ -54,6 +54,11 @@
             <artifactId>testng</artifactId>
             <version>7.5</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.stephenc.monte</groupId>
+            <artifactId>monte-screen-recorder</artifactId>
+            <version>0.7.7.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -91,20 +96,7 @@
                 </dependencies>
             </plugin>
 
-            <!-- Allure Maven Plugin -->
-<!--            <plugin>-->
-<!--                <groupId>io.qameta.allure</groupId>-->
-<!--                <artifactId>allure-maven</artifactId>-->
-<!--                <version>2.11.2</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>report</goal>   &lt;!&ndash; Generate Allure report &ndash;&gt;-->
-<!--                            <goal>serve</goal>    &lt;!&ndash; Serve the Allure report &ndash;&gt;-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
+
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
@@ -114,6 +106,14 @@
                     <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
                     <reportDirectory>${project.build.directory}/allure-report</reportDirectory>
                 </configuration>
+                <executions>
+                                    <execution>
+                                        <goals>
+                                            <goal>report</goal>   <!-- Generate Allure report from the raw results in specified directory -->
+                                            <goal>serve</goal>    <!-- Serve the Allure report It starts a local web server and opens the report in your default web browser-->
+                                        </goals>
+                                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
